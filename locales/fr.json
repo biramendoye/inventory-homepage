@@ -1,0 +1,303 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "actions": "Actions",
+    "status": "Statut",
+    "date": "Date",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "tax": "TVA",
+    "quantity": "Quantité",
+    "price": "Prix",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "city": "Ville",
+    "postalCode": "Code postal",
+    "country": "Pays",
+    "notes": "Notes",
+    "required": "Requis",
+    "optional": "Optionnel"
+  },
+  "navigation": {
+    "dashboard": "Tableau de bord",
+    "products": "Produits",
+    "sales": "Ventes",
+    "customers": "Clients",
+    "suppliers": "Fournisseurs",
+    "reports": "Rapports",
+    "settings": "Paramètres"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue sur FIBEM STOCK",
+    "subtitle": "Vue d'ensemble de votre inventaire et activité",
+    "totalProducts": "Total Produits",
+    "lowStock": "Stock Faible",
+    "outOfStock": "Rupture de stock",
+    "totalValue": "Valeur Stock",
+    "recentActivity": "Activité Récente",
+    "quickActions": "Actions rapides",
+    "addProduct": "Ajouter un produit",
+    "viewReports": "Voir les rapports",
+    "manageStock": "Gérer le stock"
+  },
+  "products": {
+    "title": "Gestion des produits",
+    "addProduct": "Ajouter un produit",
+    "productName": "Nom du produit",
+    "category": "Catégorie",
+    "stockQuantity": "Quantité en stock",
+    "minimumStock": "Stock minimum",
+    "unitPrice": "Prix unitaire",
+    "supplier": "Fournisseur",
+    "description": "Description",
+    "sku": "SKU",
+    "barcode": "Code-barres",
+    "inStock": "En stock",
+    "lowStock": "Stock faible",
+    "outOfStock": "Rupture de stock",
+    "categories": {
+      "electronics": "Électronique",
+      "clothing": "Vêtements",
+      "food": "Alimentation",
+      "books": "Livres",
+      "sports": "Sport",
+      "home": "Maison",
+      "beauty": "Beauté",
+      "toys": "Jouets"
+    }
+  },
+  "sales": {
+    "title": "Gestion des ventes",
+    "newSale": "Nouvelle vente",
+    "invoiceNumber": "N° facture",
+    "customer": "Client",
+    "customerName": "Nom du client",
+    "customerEmail": "Email du client",
+    "customerPhone": "Téléphone du client",
+    "customerAddress": "Adresse du client",
+    "saleDate": "Date de vente",
+    "dueDate": "Date d'échéance",
+    "paymentStatus": "Statut de paiement",
+    "paid": "Payé",
+    "pending": "En attente",
+    "overdue": "En retard",
+    "draft": "Brouillon",
+    "viewInvoice": "Voir facture",
+    "downloadPdf": "Télécharger PDF",
+    "sendEmail": "Envoyer par email",
+    "monthlySales": "Ventes mensuelles",
+    "paidInvoices": "Factures payées",
+    "pendingPayments": "Paiements en attente",
+    "activeCustomers": "Clients actifs",
+    "selectProduct": "Sélectionner un produit",
+    "addItem": "Ajouter un article",
+    "removeItem": "Supprimer l'article",
+    "taxRate": "Taux de TVA",
+    "paymentTerms": "Conditions de paiement",
+    "invoice": "Facture",
+    "billTo": "Facturer à",
+    "itemDescription": "Description de l'article",
+    "unitPrice": "Prix unitaire",
+    "amount": "Montant"
+  },
+  "forms": {
+    "validation": {
+      "required": "Ce champ est requis",
+      "email": "Adresse email invalide",
+      "phone": "Numéro de téléphone invalide",
+      "minLength": "Minimum {{min}} caractères",
+      "maxLength": "Maximum {{max}} caractères",
+      "positiveNumber": "Doit être un nombre positif"
+    },
+    "success": {
+      "productAdded": "Produit ajouté avec succès",
+      "productUpdated": "Produit mis à jour avec succès",
+      "saleCreated": "Vente créée avec succès",
+      "invoiceSent": "Facture envoyée avec succès"
+    },
+    "errors": {
+      "generic": "Une erreur s'est produite",
+      "networkError": "Erreur de connexion",
+      "serverError": "Erreur du serveur"
+    }
+  },
+  "header": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "dashboard": "Tableau de Bord",
+    "login": "Connexion",
+    "toggleMenu": "Basculer le menu"
+  },
+  "hero": {
+    "title": "Optimisez Votre",
+    "titleHighlight": "Gestion d'Inventaire",
+    "description": "Prenez le contrôle de votre inventaire avec notre logiciel puissant et intuitif. Suivez les niveaux de stock, gérez les fournisseurs et générez des rapports automatisés pour optimiser vos opérations commerciales.",
+    "accessDashboard": "Accéder au Tableau de Bord",
+    "viewDemo": "Voir la Démo",
+    "noCreditCard": "Aucune carte de crédit requise",
+    "freeTrial": "Essai gratuit de 14 jours",
+    "dashboardAlt": "Tableau de bord FIBEM"
+  },
+  "features": {
+    "title": "Fonctionnalités Puissantes pour les Entreprises Modernes",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer efficacement votre inventaire et développer vos opérations commerciales.",
+    "realTimeTracking": {
+      "title": "Suivi de Stock en Temps Réel",
+      "description": "Surveillez les niveaux d'inventaire en temps réel avec des alertes automatisées pour les stocks faibles et les points de réapprovisionnement."
+    },
+    "supplierManagement": {
+      "title": "Gestion des Fournisseurs",
+      "description": "Gérez les relations avec les fournisseurs, suivez les bons de commande et maintenez les métriques de performance des vendeurs."
+    },
+    "automatedReports": {
+      "title": "Rapports Automatisés",
+      "description": "Générez des rapports complets sur la rotation des stocks, les coûts et les analyses de performance."
+    },
+    "quickIntegration": {
+      "title": "Intégration Rapide",
+      "description": "Intégrez-vous facilement avec vos plateformes ERP, comptabilité et e-commerce existantes."
+    },
+    "secureCompliant": {
+      "title": "Sécurisé et Conforme",
+      "description": "Sécurité de niveau entreprise avec contrôle d'accès basé sur les rôles et pistes d'audit."
+    },
+    "multiLocationSupport": {
+      "title": "Support Multi-sites",
+      "description": "Gérez l'inventaire sur plusieurs entrepôts et emplacements depuis un seul tableau de bord."
+    }
+  },
+  "pricing": {
+    "title": "Tarification Simple et Transparente",
+    "subtitle": "Choisissez le plan parfait pour votre entreprise. Tous les plans incluent nos fonctionnalités principales de gestion d'inventaire.",
+    "mostPopular": "Le Plus Populaire",
+    "plans": {
+      "starter": {
+        "name": "Débutant",
+        "price": "29€",
+        "period": "/mois",
+        "description": "Parfait pour les petites entreprises qui commencent",
+        "features": [
+          "Jusqu'à 1 000 produits",
+          "Rapports de base",
+          "Support par email",
+          "Accès application mobile",
+          "2 comptes utilisateur"
+        ]
+      },
+      "professional": {
+        "name": "Professionnel",
+        "price": "79€",
+        "period": "/mois",
+        "description": "Idéal pour les entreprises en croissance",
+        "features": [
+          "Jusqu'à 10 000 produits",
+          "Analyses avancées",
+          "Support prioritaire",
+          "Accès API",
+          "10 comptes utilisateur",
+          "Intégrations personnalisées"
+        ]
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "price": "Sur mesure",
+        "period": "",
+        "description": "Pour les grandes organisations aux besoins complexes",
+        "features": [
+          "Produits illimités",
+          "Rapports personnalisés",
+          "Support dédié 24/7",
+          "Options marque blanche",
+          "Utilisateurs illimités",
+          "Sécurité avancée",
+          "Développement personnalisé"
+        ]
+      }
+    },
+    "getStarted": "Commencer",
+    "contactSales": "Contacter les Ventes",
+    "freeTrialNote": "Tous les plans incluent un essai gratuit de 14 jours. Aucune carte de crédit requise.",
+    "compareFeatures": "Comparer Toutes les Fonctionnalités"
+  },
+  "contact": {
+    "title": "Prêt à Commencer ?",
+    "subtitle": "Contactez-nous pour une démonstration personnalisée",
+    "description": "Notre équipe d'experts est là pour vous aider à transformer votre gestion d'inventaire. Planifiez une consultation gratuite dès aujourd'hui.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "company": "Nom de l'entreprise",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "namePlaceholder": "Votre nom complet",
+      "emailPlaceholder": "votre@email.com",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "messagePlaceholder": "Parlez-nous de vos besoins en gestion d'inventaire..."
+    },
+    "info": {
+      "email": "contact@fibem.com",
+      "phone": "+33 1 23 45 67 89",
+      "address": "123 Avenue des Affaires, Suite 100\n75001 Paris, France"
+    }
+  },
+  "cta": {
+    "title": "Transformez Votre Gestion d'Inventaire Aujourd'hui",
+    "subtitle": "Rejoignez des milliers d'entreprises qui font confiance à FIBEM STOCK",
+    "startFree": "Commencer Gratuitement",
+    "talkToSales": "Parler aux Ventes",
+    "features": [
+      "Configuration en 5 minutes",
+      "Migration de données gratuite",
+      "Support 24/7"
+    ]
+  },
+  "footer": {
+    "company": {
+      "name": "FIBEM",
+      "description": "Optimisez votre gestion d'inventaire avec notre logiciel puissant et intuitif conçu pour les entreprises modernes.",
+      "address": "123 Avenue des Affaires, Suite 100, 75001 Paris, France",
+      "email": "contact@fibem.com",
+      "phone": "+33 1 23 45 67 89"
+    },
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "integrations": "Intégrations",
+      "api": "API"
+    },
+    "company": {
+      "title": "Entreprise",
+      "about": "À Propos",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "press": "Presse"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Centre d'Aide",
+      "documentation": "Documentation",
+      "contact": "Support Contact",
+      "status": "État du Système"
+    },
+    "legal": {
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation",
+      "cookies": "Politique des Cookies",
+      "gdpr": "RGPD"
+    },
+    "copyright": "© 2024 FIBEM. Tous droits réservés."
+  }
+}
