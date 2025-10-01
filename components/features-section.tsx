@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { BarChart3, Users, FileText, Zap, Shield, Globe } from "lucide-react"
+import { ChartBar as BarChart3, Users, FileText, Zap, Shield, Globe } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 export function FeaturesSection() {
