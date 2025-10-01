@@ -1,52 +1,35 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function PricingSection() {
+  const { t } = useLanguage()
   const plans = [
     {
-      name: "Débutant",
-      price: "29€",
-      period: "/mois",
-      description: "Parfait pour les petites entreprises qui commencent",
-      features: [
-        "Jusqu'à 1 000 produits",
-        "Rapports de base",
-        "Support par email",
-        "Accès application mobile",
-        "2 comptes utilisateur",
-      ],
+      name: t("pricing.plans.starter.name"),
+      price: t("pricing.plans.starter.price"),
+      period: t("pricing.plans.starter.period"),
+      description: t("pricing.plans.starter.description"),
+      features: t("pricing.plans.starter.features") as string[],
       popular: false,
     },
     {
-      name: "Professionnel",
-      price: "79€",
-      period: "/mois",
-      description: "Idéal pour les entreprises en croissance",
-      features: [
-        "Jusqu'à 10 000 produits",
-        "Analyses avancées",
-        "Support prioritaire",
-        "Accès API",
-        "10 comptes utilisateur",
-        "Intégrations personnalisées",
-      ],
+      name: t("pricing.plans.professional.name"),
+      price: t("pricing.plans.professional.price"),
+      period: t("pricing.plans.professional.period"),
+      description: t("pricing.plans.professional.description"),
+      features: t("pricing.plans.professional.features") as string[],
       popular: true,
     },
     {
-      name: "Entreprise",
-      price: "Sur mesure",
-      period: "",
-      description: "Pour les grandes organisations aux besoins complexes",
-      features: [
-        "Produits illimités",
-        "Rapports personnalisés",
-        "Support dédié 24/7",
-        "Options marque blanche",
-        "Utilisateurs illimités",
-        "Sécurité avancée",
-        "Développement personnalisé",
-      ],
+      name: t("pricing.plans.enterprise.name"),
+      price: t("pricing.plans.enterprise.price"),
+      period: t("pricing.plans.enterprise.period"),
+      description: t("pricing.plans.enterprise.description"),
+      features: t("pricing.plans.enterprise.features") as string[],
       popular: false,
     },
   ]
@@ -55,10 +38,9 @@ export function PricingSection() {
     <section id="pricing" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Tarification Simple et Transparente</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("pricing.title")}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choisissez le plan parfait pour votre entreprise. Tous les plans incluent nos fonctionnalités principales de
-            gestion d'inventaire.
+            {t("pricing.subtitle")}
           </p>
         </div>
 
@@ -68,7 +50,7 @@ export function PricingSection() {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
-                    Le Plus Populaire
+                    {t("pricing.mostPopular")}
                   </span>
                 </div>
               )}
@@ -93,7 +75,7 @@ export function PricingSection() {
                   className={`w-full ${plan.popular ? "bg-primary hover:bg-primary/90" : "bg-secondary hover:bg-secondary/80"}`}
                   variant={plan.popular ? "default" : "secondary"}
                 >
-                  {plan.name === "Entreprise" ? "Contacter les Ventes" : "Commencer"}
+                  {plan.name === t("pricing.plans.enterprise.name") ? t("pricing.contactSales") : t("pricing.getStarted")}
                 </Button>
               </CardContent>
             </Card>
@@ -102,10 +84,10 @@ export function PricingSection() {
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Tous les plans incluent un essai gratuit de 14 jours. Aucune carte de crédit requise.
+            {t("pricing.freeTrialNote")}
           </p>
           <Button variant="outline" size="lg">
-            Comparer Toutes les Fonctionnalités
+            {t("pricing.compareFeatures")}
           </Button>
         </div>
       </div>

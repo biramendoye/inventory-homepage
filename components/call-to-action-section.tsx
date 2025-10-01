@@ -1,14 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import Link from "next/link"
+import { useLanguage } from "@/contexts/language-context"
 
 export function CallToActionSection() {
-  const benefits = [
-    "Réduisez les coûts d'inventaire jusqu'à 30%",
-    "Éliminez les ruptures et les surstocks",
-    "Économisez 10+ heures par semaine sur les tâches manuelles",
-    "Améliorez les relations avec vos fournisseurs",
-  ]
+  const { t } = useLanguage()
+  const benefits = t("cta.benefits") as string[]
 
   return (
     <section className="py-20">
@@ -17,11 +16,10 @@ export function CallToActionSection() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-balance">
-                Prêt à Transformer Votre Gestion d'Inventaire ?
+                {t("cta.title")}
               </h2>
               <p className="text-lg text-muted-foreground text-pretty">
-                Rejoignez des milliers d'entreprises qui font confiance à FIBEM STOCK pour optimiser leurs opérations et
-                augmenter leur rentabilité.
+                {t("cta.subtitle")}
               </p>
             </div>
 
@@ -37,19 +35,19 @@ export function CallToActionSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/dashboard">
                 <Button size="lg" className="text-base">
-                  Commencer Maintenant
+                  {t("cta.startNow")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/connexion">
                 <Button variant="outline" size="lg" className="text-base bg-transparent">
-                  Planifier une Démo
+                  {t("cta.scheduleDemo")}
                 </Button>
               </Link>
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Aucun frais d'installation • Annulation à tout moment • Support 24/7 inclus
+              {t("cta.note")}
             </p>
           </div>
         </div>

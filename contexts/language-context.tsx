@@ -13,7 +13,7 @@ type Language = "fr" | "en";
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string, params?: Record<string, string | number>) => string;
+  t: (key: string, params?: Record<string, string | number>) => any;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -45,7 +45,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   // Translation function with nested key support and parameter interpolation
-  const t = (key: string, params?: Record<string, string | number>): string => {
+  const t = (key: string, params?: Record<string, string | number>): any => {
     const keys = key.split(".");
     let value = translations[language];
 
@@ -69,6 +69,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         value = fallbackValue;
         break;
       }
+    }
+
+    // Return arrays and objects as-is
+    if (Array.isArray(value) || (typeof value === "object" && value !== null)) {
+      return value;
     }
 
     if (typeof value !== "string") {

@@ -143,5 +143,130 @@
   "footer": {
     "copyright": "© 2024 FIBEM STOCK. All rights reserved.",
     "poweredBy": "Powered by v0"
+  },
+  "hero": {
+    "title": "Optimize Your",
+    "titleHighlight": "Inventory Management",
+    "description": "Take control of your inventory with our powerful and intuitive software. Track stock levels, manage suppliers, and generate automated reports to optimize your business operations.",
+    "accessDashboard": "Access Dashboard",
+    "viewDemo": "View Demo",
+    "noCreditCard": "No credit card required",
+    "freeTrial": "14-day free trial",
+    "dashboardAlt": "FIBEM Dashboard"
+  },
+  "features": {
+    "title": "Powerful Features for Modern Businesses",
+    "subtitle": "Everything you need to efficiently manage your inventory and grow your business operations.",
+    "realTimeTracking": {
+      "title": "Real-Time Stock Tracking",
+      "description": "Monitor inventory levels in real-time with automated alerts for low stock and reorder points."
+    },
+    "supplierManagement": {
+      "title": "Supplier Management",
+      "description": "Manage supplier relationships, track purchase orders, and maintain vendor performance metrics."
+    },
+    "automatedReports": {
+      "title": "Automated Reports",
+      "description": "Generate comprehensive reports on stock rotation, costs, and performance analysis."
+    },
+    "quickIntegration": {
+      "title": "Quick Integration",
+      "description": "Easily integrate with your existing ERP, accounting, and e-commerce platforms."
+    },
+    "secureCompliant": {
+      "title": "Secure and Compliant",
+      "description": "Enterprise-grade security with role-based access control and audit trails."
+    },
+    "multiLocationSupport": {
+      "title": "Multi-Location Support",
+      "description": "Manage inventory across multiple warehouses and locations from a single dashboard."
+    }
+  },
+  "pricing": {
+    "title": "Simple and Transparent Pricing",
+    "subtitle": "Choose the perfect plan for your business. All plans include our core inventory management features.",
+    "mostPopular": "Most Popular",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "€29",
+        "period": "/month",
+        "description": "Perfect for small businesses getting started",
+        "features": [
+          "Up to 1,000 products",
+          "Basic reports",
+          "Email support",
+          "Mobile app access",
+          "2 user accounts"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "€79",
+        "period": "/month",
+        "description": "Ideal for growing businesses",
+        "features": [
+          "Up to 10,000 products",
+          "Advanced analytics",
+          "Priority support",
+          "API access",
+          "10 user accounts",
+          "Custom integrations"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "description": "For large organizations with complex needs",
+        "features": [
+          "Unlimited products",
+          "Custom reports",
+          "Dedicated 24/7 support",
+          "White-label options",
+          "Unlimited users",
+          "Advanced security",
+          "Custom development"
+        ]
+      }
+    },
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales",
+    "freeTrialNote": "All plans include a 14-day free trial. No credit card required.",
+    "compareFeatures": "Compare All Features"
+  },
+  "contact": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Contact us for a personalized demo",
+    "description": "Our team of experts is here to help you transform your inventory management. Schedule a free consultation today.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "message": "Message",
+      "send": "Send Message",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "your@email.com",
+      "companyPlaceholder": "Your company name",
+      "messagePlaceholder": "Tell us about your inventory management needs..."
+    },
+    "info": {
+      "email": "contact@fibem.com",
+      "phone": "+33 1 23 45 67 89",
+      "address": "123 Business Avenue, Suite 100\n75001 Paris, France"
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Inventory Management?",
+    "subtitle": "Join thousands of businesses that trust FIBEM STOCK to optimize their operations and increase profitability.",
+    "startNow": "Start Now",
+    "scheduleDemo": "Schedule a Demo",
+    "benefits": [
+      "Reduce inventory costs by up to 30%",
+      "Eliminate stockouts and overstocking",
+      "Save 10+ hours per week on manual tasks",
+      "Improve supplier relationships"
+    ],
+    "note": "No setup fees • Cancel anytime • 24/7 support included"
   }
 }

@@ -1,40 +1,42 @@
+"use client"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { BarChart3, Users, FileText, Zap, Shield, Globe } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function FeaturesSection() {
+  const { t } = useLanguage()
+
   const features = [
     {
       icon: BarChart3,
-      title: "Suivi de Stock en Temps Réel",
-      description:
-        "Surveillez les niveaux d'inventaire en temps réel avec des alertes automatisées pour les stocks faibles et les points de réapprovisionnement.",
+      title: t("features.realTimeTracking.title"),
+      description: t("features.realTimeTracking.description"),
     },
     {
       icon: Users,
-      title: "Gestion des Fournisseurs",
-      description:
-        "Gérez les relations avec les fournisseurs, suivez les bons de commande et maintenez les métriques de performance des vendeurs.",
+      title: t("features.supplierManagement.title"),
+      description: t("features.supplierManagement.description"),
     },
     {
       icon: FileText,
-      title: "Rapports Automatisés",
-      description:
-        "Générez des rapports complets sur la rotation des stocks, les coûts et les analyses de performance.",
+      title: t("features.automatedReports.title"),
+      description: t("features.automatedReports.description"),
     },
     {
       icon: Zap,
-      title: "Intégration Rapide",
-      description: "Intégrez-vous facilement avec vos plateformes ERP, comptabilité et e-commerce existantes.",
+      title: t("features.quickIntegration.title"),
+      description: t("features.quickIntegration.description"),
     },
     {
       icon: Shield,
-      title: "Sécurisé et Conforme",
-      description: "Sécurité de niveau entreprise avec contrôle d'accès basé sur les rôles et pistes d'audit.",
+      title: t("features.secureCompliant.title"),
+      description: t("features.secureCompliant.description"),
     },
     {
       icon: Globe,
-      title: "Support Multi-sites",
-      description: "Gérez l'inventaire sur plusieurs entrepôts et emplacements depuis un seul tableau de bord.",
+      title: t("features.multiLocationSupport.title"),
+      description: t("features.multiLocationSupport.description"),
     },
   ]
 
@@ -43,11 +45,10 @@ export function FeaturesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-balance">
-            Fonctionnalités Puissantes pour les Entreprises Modernes
+            {t("features.title")}
           </h2>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Tout ce dont vous avez besoin pour gérer efficacement votre inventaire et développer vos opérations
-            commerciales.
+            {t("features.subtitle")}
           </p>
         </div>
 

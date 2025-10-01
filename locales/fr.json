@@ -253,15 +253,17 @@
     }
   },
   "cta": {
-    "title": "Transformez Votre Gestion d'Inventaire Aujourd'hui",
-    "subtitle": "Rejoignez des milliers d'entreprises qui font confiance à FIBEM STOCK",
-    "startFree": "Commencer Gratuitement",
-    "talkToSales": "Parler aux Ventes",
-    "features": [
-      "Configuration en 5 minutes",
-      "Migration de données gratuite",
-      "Support 24/7"
-    ]
+    "title": "Prêt à Transformer Votre Gestion d'Inventaire ?",
+    "subtitle": "Rejoignez des milliers d'entreprises qui font confiance à FIBEM STOCK pour optimiser leurs opérations et augmenter leur rentabilité.",
+    "startNow": "Commencer Maintenant",
+    "scheduleDemo": "Planifier une Démo",
+    "benefits": [
+      "Réduisez les coûts d'inventaire jusqu'à 30%",
+      "Éliminez les ruptures et les surstocks",
+      "Économisez 10+ heures par semaine sur les tâches manuelles",
+      "Améliorez les relations avec vos fournisseurs"
+    ],
+    "note": "Aucun frais d'installation • Annulation à tout moment • Support 24/7 inclus"
   },
   "footer": {
     "company": {

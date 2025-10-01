@@ -1,8 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import Link from "next/link"
+import { useLanguage } from "@/contexts/language-context"
 
 export function HeroSection() {
+  const { t } = useLanguage()
+
   return (
     <section className="relative py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,36 +16,34 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">
-                Optimisez Votre <span className="text-primary">Gestion d'Inventaire</span>
+                {t("hero.title")} <span className="text-primary">{t("hero.titleHighlight")}</span>
               </h1>
               <p className="text-lg text-muted-foreground text-pretty max-w-2xl">
-                Prenez le contrôle de votre inventaire avec notre logiciel puissant et intuitif. Suivez les niveaux de
-                stock, gérez les fournisseurs et générez des rapports automatisés pour optimiser vos opérations
-                commerciales.
+                {t("hero.description")}
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/dashboard">
                 <Button size="lg" className="text-base">
-                  Accéder au Tableau de Bord
+                  {t("hero.accessDashboard")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Button variant="outline" size="lg" className="text-base bg-transparent">
                 <Play className="mr-2 h-4 w-4" />
-                Voir la Démo
+                {t("hero.viewDemo")}
               </Button>
             </div>
 
             <div className="flex items-center space-x-8 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>Aucune carte de crédit requise</span>
+                <span>{t("hero.noCreditCard")}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>Essai gratuit de 14 jours</span>
+                <span>{t("hero.freeTrial")}</span>
               </div>
             </div>
           </div>
@@ -50,7 +53,7 @@ export function HeroSection() {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/modern-inventory-management-dashboard-with-charts-.jpg"
-                alt="Tableau de bord FIBEM"
+                alt={t("hero.dashboardAlt")}
                 className="w-full h-full object-cover"
               />
             </div>
